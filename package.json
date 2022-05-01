@@ -8,7 +8,8 @@
     "build": "ng build",
     "xxxbuild-prod": "ng build --c production   --base-href \"/ui/\" --deploy-url \"/ui/\"  --outputPath=\"./wwwroot/ui/\" ",
     "xxxbuild-prod": "ng build --c production   --base-href \"https://ElementumIT/elementumit.github.io/\" --outputPath=\"./docs/\" ",
-    "build-prod": "ng build --c production   --base-href \"/www.elementumit.com/\" --outputPath=\"./docs/\" ",
+    "xxxbuild-prod": "ng build --c production   --base-href \"/www.elementumit.com/\" --outputPath=\"./docs/\" ",
+    "build-prod": "ng build --c production --outputPath=\"./docs/\" ",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
