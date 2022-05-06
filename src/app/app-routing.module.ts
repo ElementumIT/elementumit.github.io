@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { PageContactComponent } from './page-contact/page-contact.component';
 import { PageHomeComponent } from './page-home/page-home.component';
 
 const routes: Routes = [
@@ -11,6 +12,11 @@ const routes: Routes = [
   {
     path: 'home',
     component: PageHomeComponent,
+    // canActivate: [AuthGuardService]
+  },
+  {
+    path: 'contact',
+    component: PageContactComponent,
     // canActivate: [AuthGuardService]
   },
   {

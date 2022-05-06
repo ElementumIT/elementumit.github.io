@@ -6,11 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PageHomeComponent } from './page-home/page-home.component';
 import { SimpleGraphService } from './services/SimpleGraphService.module';
+import { PageContactComponent } from './page-contact/page-contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PageHomeComponent
+    PageHomeComponent,
+    PageContactComponent
   ],
   imports: [
     BrowserModule,
