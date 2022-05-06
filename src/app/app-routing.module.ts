@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PageContactComponent } from './page-contact/page-contact.component';
 import { PageHomeComponent } from './page-home/page-home.component';
+import { PageServicesComponent } from './page-services/page-services.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,11 @@ const routes: Routes = [
   {
     path: 'contact',
     component: PageContactComponent,
+    // canActivate: [AuthGuardService]
+  },
+  {
+    path: 'services',
+    component: PageServicesComponent,
     // canActivate: [AuthGuardService]
   },
   {

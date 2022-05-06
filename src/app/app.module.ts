@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { PageHomeComponent } from './page-home/page-home.component';
 import { SimpleGraphService } from './services/SimpleGraphService.module';
 import { PageContactComponent } from './page-contact/page-contact.component';
+import { PageServicesComponent } from './page-services/page-services.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageHomeComponent,
-    PageContactComponent
+    PageContactComponent,
+    PageServicesComponent
   ],
   imports: [
     BrowserModule,
