@@ -1,4 +1,11 @@
-<div class="row">
+<div class="row" style="margin-top:2em;">
+  <div class="col">
+    <h4>
+      To avoid spam, I have to protect my email address with a captcha. Please prove you are not a robot.
+    </h4>
+  </div>
+</div>
+<div class="row" style="margin-bottom:2em;">
   <div class="col">
     <re-captcha (resolved)="resolved($event)" [(ngModel)]="token" ></re-captcha>
     <!-- <re-captcha id="recaptcha" name="recaptcha" #recaptcha="ngModel" [(ngModel)]="token"  ></re-captcha> -->
@@ -7,19 +14,12 @@
   </div>
 </div>
 
-<form #form="ngForm">
-  <div class="row mt-3">
-    <div class="col-sm-12 mb-2">
-      <re-captcha id="recaptcha" name="recaptcha" #recaptcha="ngModel" [(ngModel)]="token" required
-        [class.is-invalid]="recaptcha.invalid && (recaptcha.dirty || recaptcha.touched)"></re-captcha>
-      <div *ngIf="recaptcha.invalid && (recaptcha.dirty || recaptcha.touched)" class="invalid-feedback">
-        <div *ngIf="recaptcha.errors?.required">This field is required.</div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12 mb-2">
-      <button type="button" class="btn btn-sm btn-primary" (click)="send(form)">Send</button>
-    </div>
-  </div>
-</form>
+<p-panel  *ngIf="token"  >
+  <p-header>
+   Elementum I.T. Consulting Contact Info
+  </p-header>
+  <p>Thank you!</p>
+  <p>Please read the disclaimer about <a href="/services">"no fixed-bid projects"</a>.
+  </p>
+  <p>If that doesn't scare you off, please email Brett at bolges@elementumit.com.</p>
+</p-panel>

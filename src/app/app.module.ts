@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PageHomeComponent } from './page-home/page-home.component';
@@ -16,6 +16,7 @@ import {
 } from 'ng-recaptcha';
 import { environment } from 'src/environments/environment';
 import { FormsModule } from '@angular/forms';
+import {PanelModule} from 'primeng-lts/panel';
 
 @NgModule({
   declarations: [
@@ -26,11 +27,13 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
     RecaptchaModule,
     RecaptchaFormsModule,
     FormsModule,
+    PanelModule
   ],
   providers: [
     SimpleGraphService,
