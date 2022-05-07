@@ -1,1 +1,7 @@
 This template came from https://startbootstrap.com/template/small-business
+
+I think I might be able to do serverless captcha this way:
+https://hackernoon.com/adding-the-google-recaptcha-v2-to-an-angular-application
+Google recaptcha site key: 6LertM0fAAAAAPrV3NZS91WT3f4ym6Voe28iL5iI
+Google recaptcha secret key: 6LertM0fAAAAAJR4kb5WPxrWRavERY-tyOMCvfJh
+

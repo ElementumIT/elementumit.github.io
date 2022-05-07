@@ -4,7 +4,9 @@
 
 export const environment = {
   production: false,
-
+  recaptcha: {
+    siteKey: '6LertM0fAAAAAPrV3NZS91WT3f4ym6Voe28iL5iI',
+  },
 };
 /*
   hgIdentityServerEndpoint: 'https://apps.hydro-gear.com/hgidentityserver',
