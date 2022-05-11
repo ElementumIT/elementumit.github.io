@@ -1,5 +1,7 @@
 <script>
   const path = window.location.pathname.slice(1);
+  console.log('from 404.html, here is the window.location object');
+  console.log(window.location);
   localStorage.setItem('path', path);
   window.location.href='../';
 </script>
