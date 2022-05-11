@@ -11,6 +11,7 @@ export class AppComponent {
 
   constructor(private router: Router) {
     let path = localStorage.getItem('path');
+    console.log('path pulled from localStorage: ' + path);
     if(path) {
       localStorage.removeItem('path');
       this.router.navigate([path]);
