@@ -2,8 +2,8 @@
   const path = window.location.pathname.slice(1);
   console.log('from 404.html, here is the window.location object');
   console.log(window.location);
-  console.log('from 404.html, here is the window.location.pathname object');
-  console.log(window.location.pathname);
+  console.log('from 404.html, here is the window.location.search.substr(1)');
+   console.log(window.location.search.substr(1));
   localStorage.setItem('path', path);
   window.location.href='../';
 </script>
