@@ -18,6 +18,10 @@ export class AppComponent {
       localStorage.removeItem('path');
       if (tag) {
         localStorage.removeItem('tag');
+        var slashLocation = path.lastIndexOf('/');
+        if (slashLocation >= 0  ) {
+            path = path.substring(0, slashLocation) ;
+        }
         console.log('will navigate to: ' + path+'#'+tag);
         // this.router.navigate([path+'#'+tag]);
         this.router.navigate([path]);
