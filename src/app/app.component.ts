@@ -13,12 +13,16 @@ export class AppComponent {
     let path = localStorage.getItem('path');
     let tag = localStorage.getItem('tag');
     console.log('path pulled from localStorage: ' + path);
+    console.log('tag pulled from localStorage: ' + tag);
     if(path) {
       localStorage.removeItem('path');
       if (tag) {
         localStorage.removeItem('tag');
-        this.router.navigate([path+'#'+tag]);
+        console.log('will navigate to: ' + path+'#'+tag);
+        // this.router.navigate([path+'#'+tag]);
+        this.router.navigate([path]);
       } else {
+        console.log('will navigate to: ' + path+'#'+tag);
         this.router.navigate([path]);
       }
      
