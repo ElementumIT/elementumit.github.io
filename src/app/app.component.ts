@@ -17,6 +17,7 @@ export class AppComponent {
     if(path) {
       localStorage.removeItem('path');
       if (tag) {
+        console.log('logic thinks it found a tag');
         localStorage.removeItem('tag');
         var slashLocation = path.lastIndexOf('/');
         if (slashLocation >= 0  ) {

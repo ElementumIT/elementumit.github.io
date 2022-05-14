@@ -10,7 +10,9 @@
   localStorage.setItem('path', path);
   if (window.location.href.indexOf('#')>-1) {
       tag = window.location.href.split('#')[1];
-      localStorage.setItem('tag', tag);
+      if (tag) {
+        localStorage.setItem('tag', tag);
+      } 
   }
   window.location.href='../';
 </script>
