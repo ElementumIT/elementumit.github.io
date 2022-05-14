@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.less']
+  styleUrls: ['./app.component.less'],
 })
 export class AppComponent {
   title = 'Elementum I.T. Consulting';
@@ -14,23 +14,23 @@ export class AppComponent {
     let tag = localStorage.getItem('tag');
     console.log('path pulled from localStorage: ' + path);
     console.log('tag pulled from localStorage: ' + tag);
-    if(path) {
+    if (path) {
       localStorage.removeItem('path');
-      if (tag) {
+      if (tag && tag != null) {
         console.log('logic thinks it found a tag');
         localStorage.removeItem('tag');
         var slashLocation = path.lastIndexOf('/');
-        if (slashLocation >= 0  ) {
-            path = path.substring(0, slashLocation) ;
+        if (slashLocation >= 0) {
+          path = path.substring(0, slashLocation);
         }
-        console.log('will navigate to: ' + path+'#'+tag);
+        console.log('will navigate to: ' + path + '#' + tag);
         //  this.router.navigate([path+'#'+tag]);
-         this.router.navigate([path]);
+        this.router.navigate([path], { fragment: tag });
+        //  this.router.navigate([path]);
       } else {
         console.log('will navigate to: ' + path);
         this.router.navigate([path]);
       }
-     
     }
   }
 }
