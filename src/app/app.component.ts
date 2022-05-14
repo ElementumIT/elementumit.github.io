@@ -11,10 +11,17 @@ export class AppComponent {
 
   constructor(private router: Router) {
     let path = localStorage.getItem('path');
+    let tag = localStorage.getItem('tag');
     console.log('path pulled from localStorage: ' + path);
     if(path) {
       localStorage.removeItem('path');
-      this.router.navigate([path]);
+      if (tag) {
+        localStorage.removeItem('tag');
+        this.router.navigate([path+'#'+tag]);
+      } else {
+        this.router.navigate([path]);
+      }
+     
     }
   }
 }
