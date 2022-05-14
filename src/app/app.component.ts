@@ -24,8 +24,8 @@ export class AppComponent {
             path = path.substring(0, slashLocation) ;
         }
         console.log('will navigate to: ' + path+'#'+tag);
-         this.router.navigate([path+'#'+tag]);
-        // this.router.navigate([path]);
+        //  this.router.navigate([path+'#'+tag]);
+         this.router.navigate([path]);
       } else {
         console.log('will navigate to: ' + path);
         this.router.navigate([path]);
