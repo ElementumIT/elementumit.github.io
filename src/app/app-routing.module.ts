@@ -25,10 +25,10 @@ const routes: Routes = [
     component: PageServicesComponent,
     // canActivate: [AuthGuardService]
   },
-  {
-    path: '**',
-    redirectTo: '/home',
-  },
+  // {
+  //   path: '**',
+  //   redirectTo: '/home',
+  // },
 ];
 
 @NgModule({
