@@ -28,7 +28,9 @@
               "src/assets",
               "src/_config.yml",
               "src/CNAME",
-              "src/404.html"
+              "src/404.html",
+              "src/.well-known/pki-validation",
+              {"glob": "0D140C6DFB0B0561425F7AB747190D0E","input":"src/.well-known/pki-validation/","output":"/"}
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
