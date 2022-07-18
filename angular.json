@@ -29,7 +29,8 @@
               "src/_config.yml",
               "src/CNAME",
               "src/404.html",
-              "src/.well-known/pki-validation"
+              "src/.well-known/pki-validation",
+              "src/well-known/pki-validation"
              ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
