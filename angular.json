@@ -29,9 +29,8 @@
               "src/_config.yml",
               "src/CNAME",
               "src/404.html",
-              "src/.well-known/pki-validation",
-              {"glob": ".well-known/pki-validation/0D140C6DFB0B0561425F7AB747190D0E.txt","input":"src/.well-known/pki-validation/","output":"/"}
-            ],
+              "src/.well-known/pki-validation/0D140C6DFB0B0561425F7AB747190D0E.txt"
+             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/assets/startbootstrap-small-business-gh-pages/css/styles.css",
