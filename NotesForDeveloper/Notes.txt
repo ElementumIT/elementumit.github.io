@@ -5,3 +5,8 @@ https://hackernoon.com/adding-the-google-recaptcha-v2-to-an-angular-application
 Google recaptcha site key: 6LertM0fAAAAAPrV3NZS91WT3f4ym6Voe28iL5iI
 Google recaptcha secret key: 6LertM0fAAAAAJR4kb5WPxrWRavERY-tyOMCvfJh
 
+
+
+https://app.zerossl.com/certificate/verify
+
+https://stackoverflow.com/questions/56670618/make-file-available-at-route-angular-7
