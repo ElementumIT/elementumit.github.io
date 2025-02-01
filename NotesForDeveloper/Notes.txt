@@ -1,3 +1,11 @@
+To Deploy:
+-----------------
+I think I just do:
+  npm run build-deploy
+  Then commit the git repo and publish?
+  Yup, this worked as of 2/1/2025
+
+
 This template came from https://startbootstrap.com/template/small-business
 
 I think I might be able to do serverless captcha this way:
@@ -12,9 +20,4 @@ https://app.zerossl.com/certificate/verify
 https://stackoverflow.com/questions/56670618/make-file-available-at-route-angular-7
 
 
-To Deploy:
------------------
-I think I just do:
-  npm run build-deploy
-  Then commit the git repo and publish?
-  
+
