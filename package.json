@@ -4,10 +4,10 @@
   "scripts": {
     "ng": "ng",
     "xxxstart-iis": "ng build --c dev  --base-href \"/ui/\" --deploy-url \"/ui/\"  --outputPath=\"./wwwroot/ui/\" --watch",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && ng serve",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && ng build",
     "xxxbuild-prod": "ng build --c production --base-href \"https://www.elementumit.com/\" --outputPath=\"./docs/\" ",
-    "build-deploy": "ng build --c production --outputPath=\"./docs/\" ",
+    "build-deploy": "set NODE_OPTIONS=--openssl-legacy-provider && ng build --c production --outputPath=\"./docs/\" ",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

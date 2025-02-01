@@ -10,3 +10,11 @@ Google recaptcha secret key: 6LertM0fAAAAAJR4kb5WPxrWRavERY-tyOMCvfJh
 https://app.zerossl.com/certificate/verify
 
 https://stackoverflow.com/questions/56670618/make-file-available-at-route-angular-7
+
+
+To Deploy:
+-----------------
+I think I just do:
+  npm run build-deploy
+  Then commit the git repo and publish?
+  
