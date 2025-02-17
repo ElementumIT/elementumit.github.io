@@ -1,0 +1,5 @@
+<div *ngFor="let task of tasks">
+  <h3>{{ task.properties['Task name'].title[0].plain_text }}</h3>
+  <p>{{ task.properties.DescriptionForPublic.rich_text[0]?.plain_text }}</p>
+  <a [href]="task.url" target="_blank">View in Notion</a>
+</div>

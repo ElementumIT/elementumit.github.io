@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { PageContactComponent } from './page-contact/page-contact.component';
 import { PageHomeComponent } from './page-home/page-home.component';
 import { PageServicesComponent } from './page-services/page-services.component';
+import { PageReportsComponent } from './page-reports/page-reports.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,11 @@ const routes: Routes = [
   {
     path: 'services',
     component: PageServicesComponent,
+    // canActivate: [AuthGuardService]
+  },
+  {
+    path: 'reports',
+    component: PageReportsComponent,
     // canActivate: [AuthGuardService]
   },
   // {

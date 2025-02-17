@@ -17,6 +17,9 @@ import {
 import { environment } from 'src/environments/environment';
 import { FormsModule } from '@angular/forms';
 import {PanelModule} from 'primeng-lts/panel';
+import { PageReportsComponent } from './page-reports/page-reports.component';
+import { NotionTasksComponent } from './notion-tasks/notion-tasks.component';
+import { NotionTasksService } from './services/notion-tasks.service';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,8 @@ import {PanelModule} from 'primeng-lts/panel';
     PageHomeComponent,
     PageContactComponent,
     PageServicesComponent,
+    PageReportsComponent,
+    NotionTasksComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,6 +42,7 @@ import {PanelModule} from 'primeng-lts/panel';
   ],
   providers: [
     SimpleGraphService,
+    NotionTasksService,
     {
       provide: RECAPTCHA_SETTINGS,
       useValue: {
