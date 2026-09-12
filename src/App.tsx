@@ -53,7 +53,7 @@ export default function App() {
         Copyright &copy; Elementum I.T. Consulting 2016&ndash;2026
         <br />
         <a href="/skills/" className="footer-subtle">
-          Skills reference
+          Skills for AI Agents
         </a>
       </footer>
     </BrowserRouter>
