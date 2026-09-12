@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Public offline licensing prototype from Elementum I.T. Consulting." />
+    <title>EL Licensing Lab — Public Prototype</title>
+    <style>
+      body { color: #1f2937; font: 16px/1.5 system-ui, sans-serif; margin: 0; background: #f8fafc; }
+      main { background: #fff; box-shadow: 0 1px 3px #0002; margin: 2rem auto; max-width: 46rem; padding: 2rem; }
+      code, textarea { font-family: ui-monospace, Consolas, monospace; }
+      textarea { box-sizing: border-box; display: block; margin: .35rem 0 1rem; min-height: 7rem; width: 100%; }
+      button { margin: .25rem .5rem .25rem 0; padding: .55rem .8rem; }
+      .notice { background: #fff7ed; border-left: .3rem solid #ea580c; padding: .75rem 1rem; }
+      #installation-id { overflow-wrap: anywhere; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>EL Licensing Lab</h1>
+      <p>This is a harmless public prototype for Elementum’s offline licensing workflow. It does not sell a product or collect payment information.</p>
+      <p class="notice"><strong>Prototype boundary:</strong> this browser installation code is not a hardware fingerprint, and this page is not DRM. It demonstrates the ordinary activation, reset, and replacement experience.</p>
+      <h2>Try the activation flow</h2>
+      <ol>
+        <li>Copy the installation code below.</li>
+        <li>Give it to the private test operator, who can issue a test license and matching activation receipt.</li>
+        <li>Paste both artifacts and activate this browser installation.</li>
+      </ol>
+      <p>This browser instance is identified locally by this installation code:</p>
+      <p><code id="installation-id"></code></p>
+      <p>Issue a product license, then an activation receipt bound to that code.</p>
+      <label for="license">Product license</label>
+      <textarea id="license" rows="8" spellcheck="false"></textarea>
+      <label for="receipt">Activation receipt</label>
+      <textarea id="receipt" rows="8" spellcheck="false"></textarea>
+      <button id="activate" type="button">Activate this installation</button>
+      <button id="reset" type="button">Reset local installation</button>
+      <p id="result" aria-live="polite"></p>
+      <p><a href="https://www.elementumit.com/">Elementum I.T. Consulting</a></p>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
