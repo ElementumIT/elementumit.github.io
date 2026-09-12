@@ -51,6 +51,10 @@ export default function App() {
       </main>
       <footer className="site-footer">
         Copyright &copy; Elementum I.T. Consulting 2016&ndash;2026
+        <br />
+        <a href="/skills/" className="footer-subtle">
+          Skills reference
+        </a>
       </footer>
     </BrowserRouter>
   );

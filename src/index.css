@@ -226,6 +226,17 @@ main.wrap {
   font-size: 0.9rem;
 }
 
+.footer-subtle {
+  color: #6b7d92;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.footer-subtle:hover {
+  color: #cfd8e3;
+  text-decoration: underline;
+}
+
 @media (max-width: 760px) {
   .hero {
     grid-template-columns: 1fr;
