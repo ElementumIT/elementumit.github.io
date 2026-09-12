@@ -1,0 +1,354 @@
+[
+  {
+    "dir": "bretts-put-finder",
+    "name": "bretts-put-finder",
+    "description": "|",
+    "version": "1.4.0",
+    "title": "Brett's Put Finder",
+    "path": "bretts-put-finder/SKILL.md"
+  },
+  {
+    "dir": "defuddle",
+    "name": "defuddle",
+    "description": "Extract clean markdown content from web pages using Defuddle CLI, removing clutter and navigation to save tokens. Use instead of WebFetch when the user provides a URL to read or analyze, for online documentation, articles, blog posts, or any standard web page. Do NOT use for URLs ending in .md \u2014 those are already markdown, use WebFetch directly.",
+    "version": "",
+    "title": "Defuddle",
+    "path": "defuddle/SKILL.md"
+  },
+  {
+    "dir": "el-breaking-change-review",
+    "name": "el-breaking-change-review",
+    "description": "Review one git commit, branch, tag, or ref against another and identify changes that may unintentionally break behavior. Use when the user asks to compare commits, review a commit range, check for breaking changes, assess merge risk, inspect what changed between two refs, or flag dangerous-looking diffs before merge, deploy, or rollback.",
+    "version": "",
+    "title": "El Breaking Change Review",
+    "path": "el-breaking-change-review/SKILL.md"
+  },
+  {
+    "dir": "el-browser-control",
+    "name": "el-browser-control",
+    "description": "Open and control an isolated Chrome instance for local web-app debugging, especially localhost apps with Windows auth, Codex in-app browser confusion, Chrome profile conflicts, shadow DOM custom elements, and Playwright/CDP inspection. Use when the user asks to drive Chrome, use an attachable browser, debug a rendered app in Chrome, or reproduce UI behavior that depends on auth/session state.",
+    "version": "",
+    "title": "El Browser Control",
+    "path": "el-browser-control/SKILL.md"
+  },
+  {
+    "dir": "el-elsa-studio",
+    "name": "el-elsa-studio",
+    "description": "Use when wiring Elsa, seeding flows, or debugging Studio.",
+    "version": "0.1.0",
+    "title": "Elsa Studio Self-Host Skill",
+    "path": "el-elsa-studio/SKILL.md"
+  },
+  {
+    "dir": "el-feature-overview",
+    "name": "el-feature-overview",
+    "description": "Create or update an Obsidian/GBrain feature-overview.md document for a feature folder. Use when the user asks for an Elementum Feature Overview, feature overview, \"how this feature works\" documentation, reverse-chronological feature log, or wants a GBrain/Obsidian feature folder summarized for a mid-level application developer with source-code cross-references. Documentation-only by default; inspect source code when available but do not change implementation files.",
+    "version": "",
+    "title": "El Feature Overview",
+    "path": "el-feature-overview/SKILL.md"
+  },
+  {
+    "dir": "el-fork",
+    "name": "el-fork",
+    "description": "|",
+    "version": "1.0.0",
+    "title": "El Fork",
+    "path": "el-fork/SKILL.md"
+  },
+  {
+    "dir": "el-game-plan",
+    "name": "el-game-plan",
+    "description": "Create or update documentation that gives a Codex agent an implementation game plan for a new feature or modification to existing functionality. Use when the user asks for a documented game plan, implementation plan, feature plan, modification plan, strategy, approach, roadmap, checklist, phase plan, requests-to-ai-agent follow-up, or wants to be interviewed or grilled through requirements before another Codex agent changes code. During requirements interviews, incorporate the grill-me skill's one-question-at-a-time, recommendation-backed questioning style. By default, this skill writes documentation only and should not make product code changes.",
+    "version": "",
+    "title": "El Game Plan",
+    "path": "el-game-plan/SKILL.md"
+  },
+  {
+    "dir": "el-gbrain-authoring-standards",
+    "name": "el-gbrain-authoring-standards",
+    "description": "Apply Brett's Elementum/GBrain authoring conventions for Obsidian project docs. Use when creating or updating GBrain project docs, phase docs, game plans, feature overviews, completion notes, index pages, timeline sections, Related Docs sections, or when the user asks how GBrain docs should be written so the local GBrain index can extract and query them.",
+    "version": "",
+    "title": "El GBrain Authoring Standards",
+    "path": "el-gbrain-authoring-standards/SKILL.md"
+  },
+  {
+    "dir": "el-gbrain-cleanup-pass",
+    "name": "el-gbrain-cleanup-pass",
+    "description": "Improve GBrain or Obsidian vault quality by scanning an existing project area and making conservative cleanup edits that help GBrain retrieve and use the docs: high-signal wikilinks, backlinks, index entries, aliases/search anchors, source pointers, See Also or Related Docs sections, brief association notes, obvious timeline/index repairs, missing template/frontmatter field fills, and discoverability fixes. Use when the user asks for a cleanup pass, linking pass, association pass, vault enrichment, backlink cleanup, GBrain project discoverability improvements, Graph View/orphan cleanup, template field cleanup, or to connect feature docs, phase docs, completion notes, runbooks, decisions, validation notes, architecture pages, or data pages. Use GBrain project memory when available; if GBrain access fails or returns unclear context, ask the user how to proceed. Do not rewrite or summarize whole pages.",
+    "version": "",
+    "title": "El GBrain Cleanup Pass",
+    "path": "el-gbrain-cleanup-pass/SKILL.md"
+  },
+  {
+    "dir": "el-gbrain-code-session-distiller",
+    "name": "el-gbrain-code-session-distiller",
+    "description": "Preview evidence-backed, durable GBrain documentation updates from a coding-session artifact without storing the raw session in the vault. Use when asked to distill, summarize, or propose project-memory updates from Codex/Claude transcripts, JSONL logs, terminal sessions, diffs, validation output, or similar coding-session evidence. The current implementation is preview-only; apply approved edits manually.",
+    "version": "",
+    "title": "El GBrain Code Session Distiller",
+    "path": "el-gbrain-code-session-distiller/SKILL.md"
+  },
+  {
+    "dir": "el-gbrain-doc-phase-close",
+    "name": "el-gbrain-doc-phase-close",
+    "description": "Close or document completion of an Elementum/GBrain project phase by finding recent closed phase examples in Brett's GBrain vault and using them as the local pattern. Use when the user asks to close a phase, mark a phase complete, document phase completion, update phase docs after implementation, create a completion note, or make a phase look like recent completed phases in GBrain/Obsidian.",
+    "version": "",
+    "title": "El GBrain Doc Phase Close",
+    "path": "el-gbrain-doc-phase-close/SKILL.md"
+  },
+  {
+    "dir": "el-gbrain-project-init",
+    "name": "el-gbrain-project-init",
+    "description": "Initialize a new GBrain project folder from existing GBrain project conventions. Use when the user asks for Elementum GBrain Project Init, wants to create a new GBrain project, scaffold a project directory under the GBrain vault, mirror existing project structure, or optionally continue into standard project documentation initialization from a codebase.",
+    "version": "",
+    "title": "El GBrain Project Init",
+    "path": "el-gbrain-project-init/SKILL.md"
+  },
+  {
+    "dir": "el-git-message",
+    "name": "el-git-message",
+    "description": "Generate a concise, human-friendly git commit message from staged or working-tree git changes. Use when the user asks for a commit message, git message, Conventional Commit, or summary of changes for committing.",
+    "version": "",
+    "title": "El Git Message",
+    "path": "el-git-message/SKILL.md"
+  },
+  {
+    "dir": "el-hermes-backup",
+    "name": "el-hermes-backup",
+    "description": "Use when asked to back up, verify, or restore the server.",
+    "version": "0.1.0",
+    "title": "Hermes Server Backup Skill",
+    "path": "el-hermes-backup/SKILL.md"
+  },
+  {
+    "dir": "el-loop",
+    "name": "el-loop",
+    "description": "Run a bounded, evidence-driven success loop for a safe approved change in any project type: UI, API/service, data/DB, CLI/library, automation, or documentation. Use when the user asks to prove a change worked in the real project, run a success loop, verify an implementation end-to-end, assess usability, or invokes `el-loop`. Requires project-appropriate functional evidence and independent review; it does not replace feature-specific tests or build a general agent orchestration system.",
+    "version": "",
+    "title": "El Success Loop",
+    "path": "el-loop/SKILL.md"
+  },
+  {
+    "dir": "el-playwright-writer",
+    "name": "el-playwright-writer",
+    "description": "Build reliable Playwright tests for web applications by first discovering the live UI in a visible Google Chrome session, then authoring and verifying the corresponding Playwright script. Use when creating, repairing, or extending browser tests from a user-described workflow.",
+    "version": "",
+    "title": "El Playwright Writer",
+    "path": "el-playwright-writer/SKILL.md"
+  },
+  {
+    "dir": "el-ponytail",
+    "name": "el-ponytail",
+    "description": ">",
+    "version": "",
+    "title": "El Ponytail",
+    "path": "el-ponytail/SKILL.md"
+  },
+  {
+    "dir": "el-ponytail-review",
+    "name": "el-ponytail-review",
+    "description": "|",
+    "version": "1.0.0",
+    "title": "El Ponytail Review",
+    "path": "el-ponytail-review/SKILL.md"
+  },
+  {
+    "dir": "el-session-primer",
+    "name": "el-session-primer",
+    "description": "Run at the start of a session to establish workflow defaults, read repo instructions, and optionally check GBrain and GitNexus status. Use when the user wants a consistent startup routine, session bootstrap, environment check, or agent workflow primer.",
+    "version": "",
+    "title": "El Session Primer",
+    "path": "el-session-primer/SKILL.md"
+  },
+  {
+    "dir": "el-vs2019-dotnet-build",
+    "name": "el-vs2019-dotnet-build",
+    "description": "Build, restore, diagnose, and document legacy Windows .NET Framework or old-style .NET solutions that require Visual Studio 2019, MSBuild 16.x, packages.config, classic .sln/.csproj projects, web application targets, setup projects, or other non-SDK-style build behavior. Use when the user asks to build an older .NET solution, run npm/package scripts that eventually invoke a VS2019 solution build, fix MSBuild/NuGet restore failures in legacy repos, or capture build diagnostics for Visual Studio 2019 projects.",
+    "version": "",
+    "title": "El VS2019 .NET Build",
+    "path": "el-vs2019-dotnet-build/SKILL.md"
+  },
+  {
+    "dir": "frontend-app-builder",
+    "name": "frontend-app-builder",
+    "description": "Use for new frontend applications, dashboards, games, creative websites, hero sections, and visually driven UI from scratch, or when the user explicitly asks for a redesign/restyle/modernization. Builds from clean, airy, high-taste, readable image-generated concept design with section-specific references, faithful implementation, and browser testing.",
+    "version": "",
+    "title": "Frontend App Builder",
+    "path": "frontend-app-builder/SKILL.md"
+  },
+  {
+    "dir": "frontend-testing-debugging",
+    "name": "frontend-testing-debugging",
+    "description": "Use when testing, debugging, or making targeted improvements to rendered frontend apps through the Build Web Apps or web dev plugin: local dev servers, UI regressions, interaction bugs, console errors, responsive layout, and visual QA. Check whether the Browser plugin is available and use it first when it is; otherwise use regular Playwright with the recorded reason.",
+    "version": "",
+    "title": "Frontend Testing Debugging",
+    "path": "frontend-testing-debugging/SKILL.md"
+  },
+  {
+    "dir": "grill-me",
+    "name": "grill-me",
+    "description": "Interview the user relentlessly about a plan or design until reaching shared understanding, resolving each branch of the decision tree. Use when user wants to stress-test a plan, get grilled on their design, or mentions \"grill me\".",
+    "version": "",
+    "title": "grill-me",
+    "path": "grill-me/SKILL.md"
+  },
+  {
+    "dir": "json-canvas",
+    "name": "json-canvas",
+    "description": "Create and edit JSON Canvas files (.canvas) with nodes, edges, groups, and connections. Use when working with .canvas files, creating visual canvases, mind maps, flowcharts, or when the user mentions Canvas files in Obsidian.",
+    "version": "",
+    "title": "JSON Canvas Skill",
+    "path": "json-canvas/SKILL.md"
+  },
+  {
+    "dir": "obsidian-bases",
+    "name": "obsidian-bases",
+    "description": "Create and edit Obsidian Bases (.base files) with views, filters, formulas, and summaries. Use when working with .base files, creating database-like views of notes, or when the user mentions Bases, table views, card views, filters, or formulas in Obsidian.",
+    "version": "",
+    "title": "Obsidian Bases Skill",
+    "path": "obsidian-bases/SKILL.md"
+  },
+  {
+    "dir": "obsidian-cli",
+    "name": "obsidian-cli",
+    "description": "Interact with Obsidian vaults using the Obsidian CLI to read, create, search, and manage notes, tasks, properties, and more. Also supports plugin and theme development with commands to reload plugins, run JavaScript, capture errors, take screenshots, and inspect the DOM. Use when the user asks to interact with their Obsidian vault, manage notes, search vault content, perform vault operations from the command line, or develop and debug Obsidian plugins and themes.",
+    "version": "",
+    "title": "Obsidian CLI",
+    "path": "obsidian-cli/SKILL.md"
+  },
+  {
+    "dir": "obsidian-markdown",
+    "name": "obsidian-markdown",
+    "description": "Create and edit Obsidian Flavored Markdown with wikilinks, embeds, callouts, properties, and other Obsidian-specific syntax. Use when working with .md files in Obsidian, or when the user mentions wikilinks, callouts, frontmatter, tags, embeds, or Obsidian notes.",
+    "version": "",
+    "title": "Obsidian Flavored Markdown Skill",
+    "path": "obsidian-markdown/SKILL.md"
+  },
+  {
+    "dir": "omm-push",
+    "name": "omm-push",
+    "description": "Push architecture docs to oh-my-mermaid cloud. Handles login, link, and push workflow with error guidance. Use when the user says \"omm push\", \"push to cloud\", \"deploy architecture\", or \"share architecture\".",
+    "version": "",
+    "title": "omm-push \u2014 Cloud Push Workflow",
+    "path": "omm-push/SKILL.md"
+  },
+  {
+    "dir": "omm-scan",
+    "name": "omm-scan",
+    "description": "Scan codebase architecture and generate/update .omm/ documentation. Use when the user says \"omm scan\", \"scan architecture\", \"update architecture\", \"refresh diagrams\".",
+    "version": "",
+    "title": "omm-scan \u2014 Perspective-Based Architecture Scanner",
+    "path": "omm-scan/SKILL.md"
+  },
+  {
+    "dir": "omm-view",
+    "name": "omm-view",
+    "description": "Start the omm web viewer to explore architecture diagrams in the browser. Use when the user says \"omm view\", \"open viewer\", \"show diagrams\", \"view architecture\", or \"open architecture\".",
+    "version": "",
+    "title": "omm-view \u2014 Architecture Viewer",
+    "path": "omm-view/SKILL.md"
+  },
+  {
+    "dir": "playwright",
+    "name": "playwright",
+    "description": "Use when the task requires automating a real browser from the terminal (navigation, form filling, snapshots, screenshots, data extraction, UI-flow debugging) via `playwright-cli` or the bundled wrapper script.",
+    "version": "",
+    "title": "Playwright CLI Skill",
+    "path": "playwright/SKILL.md"
+  },
+  {
+    "dir": "playwright-cli",
+    "name": "playwright-cli",
+    "description": "Automates browser interactions for web testing, form filling, screenshots, and data extraction. Use when the user needs to navigate websites, interact with web pages, fill forms, take screenshots, test web applications, or extract information from web pages.",
+    "version": "",
+    "title": "Browser Automation with playwright-cli",
+    "path": "playwright-cli/SKILL.md"
+  },
+  {
+    "dir": "playwright-interactive",
+    "name": "playwright-interactive",
+    "description": "Persistent browser and Electron interaction through `js_repl` for fast iterative UI debugging.",
+    "version": "",
+    "title": "Playwright Interactive Skill",
+    "path": "playwright-interactive/SKILL.md"
+  },
+  {
+    "dir": "ponytail",
+    "name": "ponytail",
+    "description": ">",
+    "version": "",
+    "title": "Ponytail",
+    "path": "ponytail/SKILL.md"
+  },
+  {
+    "dir": "ponytail-audit",
+    "name": "ponytail-audit",
+    "description": ">",
+    "version": "",
+    "title": "ponytail-audit",
+    "path": "ponytail-audit/SKILL.md"
+  },
+  {
+    "dir": "ponytail-debt",
+    "name": "ponytail-debt",
+    "description": ">",
+    "version": "",
+    "title": "ponytail-debt",
+    "path": "ponytail-debt/SKILL.md"
+  },
+  {
+    "dir": "ponytail-gain",
+    "name": "ponytail-gain",
+    "description": ">",
+    "version": "",
+    "title": "Ponytail Gain",
+    "path": "ponytail-gain/SKILL.md"
+  },
+  {
+    "dir": "ponytail-help",
+    "name": "ponytail-help",
+    "description": ">",
+    "version": "",
+    "title": "Ponytail Help",
+    "path": "ponytail-help/SKILL.md"
+  },
+  {
+    "dir": "ponytail-review",
+    "name": "ponytail-review",
+    "description": ">",
+    "version": "",
+    "title": "ponytail-review",
+    "path": "ponytail-review/SKILL.md"
+  },
+  {
+    "dir": "pretty-mermaid",
+    "name": "pretty-mermaid",
+    "description": "|",
+    "version": "",
+    "title": "Pretty Mermaid",
+    "path": "pretty-mermaid/SKILL.md"
+  },
+  {
+    "dir": "screenshot",
+    "name": "screenshot",
+    "description": "Use when the user explicitly asks for a desktop or system screenshot (full screen, specific app or window, or a pixel region), or when tool-specific capture capabilities are unavailable and an OS-level capture is needed.",
+    "version": "",
+    "title": "Screenshot Capture",
+    "path": "screenshot/SKILL.md"
+  },
+  {
+    "dir": "visual-plan",
+    "name": "visual-plan",
+    "description": ">-",
+    "version": "",
+    "title": "Agent-Native Plans",
+    "path": "visual-plan/SKILL.md"
+  },
+  {
+    "dir": "winui-app",
+    "name": "winui-app",
+    "description": "Bootstrap, develop, and design modern WinUI 3 desktop applications with C# and the Windows App SDK using official Microsoft guidance, WinUI Gallery patterns, Windows App SDK samples, and CommunityToolkit components. Use when creating a brand new app, preparing a machine for WinUI, reviewing, refactoring, planning, troubleshooting, environment-checking, or setting up WinUI 3 XAML, controls, navigation, windowing, theming, accessibility, responsiveness, performance, deployment, or related Windows app design and development work.",
+    "version": "",
+    "title": "WinUI App",
+    "path": "winui-app/SKILL.md"
+  }
+]
